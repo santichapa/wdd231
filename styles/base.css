@@ -73,7 +73,7 @@ h2 {
 
 .card {
     background-color: var(--background-light-color);
-    margin: 1em auto 0 ;
+    margin: 1em auto 0;
     padding: 0;
     text-align: center;
     font-family: var(--paragraph-font);
