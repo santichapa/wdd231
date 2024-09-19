@@ -1,0 +1,33 @@
+@media screen and (min-width: 650px) {
+    main {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav, .open{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--primary-color);
+        font-family: var(--paragraph-font);
+        font-weight: 300;
+        margin: .5em 0;
+        position: relative;
+        align-content: center;
+    }
+
+    nav a {
+        margin: 0;
+        padding: .5em 5%;
+    }
+
+    .card {
+        
+        max-width: 100;
+    }
+    
+}

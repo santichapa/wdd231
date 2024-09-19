@@ -1,0 +1,136 @@
+* {
+    --primary-color: #454372;
+    --secondary-color: #70877f;
+    --background-light-color: #F0F0F0;
+    --font-bright: #fff;
+    --font-dark: #000;
+    --title-font: "Montserrat", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--font-bright);
+    font-family: var(--title-font);
+    padding: .5em 1.8em .5em 1em;
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+.open{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-weight: 300;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--font-bright);
+    padding: 1em;
+    text-align: center;
+}
+
+nav a:hover {
+    text-shadow: 0 2px 2px #fff;
+}
+
+nav a:active {
+    color: rgb(159, 159, 159);
+}
+
+nav .active {
+    color: #e6cf00;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5em;
+    border: none;
+    padding: .5em .65em;
+    margin: 0;
+    background-color: var(--primary-color);
+    color: var(--font-bright);
+}
+
+#menu::before {
+	content: "☰";
+}
+
+h2 {
+    margin:0;
+    background-color: var(--secondary-color);
+    padding: 1em .5em .5em;
+    font-family: var(--title-font);
+
+}
+
+.card {
+    background-color: var(--background-light-color);
+    margin: 1em auto 0 ;
+    padding: 0;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--background-light-color);
+    margin-top: 1em;
+    padding: 1em;
+    color: var(--font-dark);
+    font-family: var(--paragraph-font);
+    font-weight: 300;
+    text-align: center;
+}
+
+#lastModified {
+    color: #d78800;
+}
+
+/* ========== COURSES LIST STYLING ========== */
+
+#courseList {
+    padding: 1em;
+    margin: 0;
+}
+
+#courseList li {
+    list-style: none;
+    padding: 1em;
+    background-color: #A62639;
+    margin: .5em auto;
+    border-radius: .5em;
+    border: solid 2px black;
+    font-weight: 500;
+}
+
+#courseList li.completed {
+    background-color: #5B6579;
+}
+
+button {
+    background-color: var(--background-light-color);
+    padding: .5em;
+    margin: .5em .5em 0;
+    border-radius: 3px;
+}
+
+#reqCredits {
+    margin: 0;
+    padding-bottom: 1em;
+    font-weight: 500;
+}
+

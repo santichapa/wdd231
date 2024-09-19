@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Homepage</title>
+    <meta name="description" content="A landing page for Santiago Chaparro's project hub.">
+    <meta name="author" content="Santiago Ariel Chaparo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231</h1>
+    <header>
+        <h1>WDD 231 - Web Frontend Development I</h1>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="">Chamber</a>
+        <a href="">GitHub</a>
+        <a href="">LinkedIn</a>
+    </nav>
+    <main>
+        <section class="card">
+            <h2>Coursework</h2>
+            <button id="allCoursesBtn">All</button>
+            <button id="cseCoursesBtn">CSE</button>
+            <button id="wddCoursesBtn">WDD</button>
+            <ul id="courseList"></ul>
+            <p id="reqCredits">Credits Requireds: 87/90</p>
+        </section>
+        <section class="card">
+            <h2>Buenos Aires, Argentina</h2>
+            <img src="images/hero-small.webp" alt="A picture of Buenos Aires Argentina Temple">
+        </section>
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 <span id="currentyear"></span> Santiago Ariel Chaparo | Buenos Aires, Argentina | WDD 231 - Web Frontend Development I</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

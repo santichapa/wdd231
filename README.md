@@ -1,2 +1,3 @@
 # wdd231
-#testing
+
+This is a learning course activities page with all the projects by Santiago Chaparro.
