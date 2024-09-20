@@ -95,9 +95,14 @@ function displayCourses(courses) {
         li.innerText = `${c.subject} ${c.number}`
 
         courseList.appendChild(li);
-        creditSum = creditSum + c.credits
+        // creditSum = creditSum + c.credits
     });
-    reqCredits.textContent = `Required Credits: ${currentCredits}/${creditSum}`
+    const totalCredits = courses.reduce((creditSum, course) => {
+        // console.log(`creditSum: ${creditSum}`)
+        // console.log(`Course: ${course.credits}`)
+        return creditSum + course.credits
+    }, 0)
+    reqCredits.textContent = `Required Credits: ${currentCredits}/${totalCredits}`
 };
 
 document.querySelector("#allCoursesBtn").addEventListener("click", () =>{
@@ -113,3 +118,5 @@ document.querySelector("#wddCoursesBtn").addEventListener("click", () =>{
 })
 
 displayCourses(courses);
+
+

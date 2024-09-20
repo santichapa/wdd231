@@ -97,7 +97,7 @@ footer {
 }
 
 #lastModified {
-    color: #d78800;
+    color: #7e5000;
 }
 
 /* ========== COURSES LIST STYLING ========== */
@@ -115,6 +115,7 @@ footer {
     border-radius: .5em;
     border: solid 2px black;
     font-weight: 500;
+    color: var(--font-bright);
 }
 
 #courseList li.completed {
