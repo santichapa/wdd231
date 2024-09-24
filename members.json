@@ -1,0 +1,43 @@
+{
+    "familyName": "Chaparro",
+    "movedIn": "Feb 13 2001",
+    "numRecords": 7,
+    "visited": true,
+    "familyMembers": [
+        {
+            "name": "Santiago Ariel Chaparro",
+            "Gender": "Male",
+            "Birthdate": "Feb 13 2001"
+        },
+        {
+            "name": "Ariel Esteban Chaparro",
+            "Gender": "Male",
+            "Birthdate": "Mar 21 1968"
+        },
+        {
+            "name": "Ana Lidia Chaparro Scazzina",
+            "Gender": "Female",
+            "Birthdate": "Sep 27 1968"
+        },
+        {
+            "name": "Ana Belen Chaparro",
+            "Gender": "Female",
+            "Birthdate": "Jan 22 1996"
+        },
+        {
+            "name": "Abel Esteban Chaparro",
+            "Gender": "Male",
+            "Birthdate": "Sep 7 1995"
+        },
+        {
+            "name": "Matias Daniel Chaparro",
+            "Gender": "Male",
+            "Birthdate": "Apr 7 1998"
+        },
+        {
+            "name": "Lucas Joel Chaparro",
+            "Gender": "Male",
+            "Birthdate": "Sep 19 2003"
+        }
+    ]
+}

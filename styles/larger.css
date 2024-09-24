@@ -9,20 +9,11 @@
         display: none;
     }
 
-    nav, .open{
+    ul.menuLinks, ul.menuLinks.open {
         display: flex;
-        flex-direction: row;
-        background-color: var(--primary-color);
-        font-family: var(--paragraph-font);
-        font-weight: 300;
-        margin: .5em 0;
-        position: relative;
-        align-content: center;
     }
 
-    nav a {
-        margin: 0;
-        padding: .5em 5%;
+    nav {
+        grid-template-rows: 1fr;
     }
-    
 }

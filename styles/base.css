@@ -16,34 +16,49 @@ h1 {
     margin: 0;
 }
 
+/* ========== NAVIGATION STYLING ========== */
+
 nav {
-    display: none;
-}
-
-.open{
-    display: flex;
-    flex-direction: column;
     background-color: var(--primary-color);
-    font-family: var(--paragraph-font);
-    font-weight: 300;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
 }
 
-nav a{
-    text-decoration: none;
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
     color: var(--font-bright);
-    padding: 1em;
+    text-decoration: none;
     text-align: center;
+    margin: 0;
+    font-family: var(--paragraph-font);
+}
+
+ul.menuLinks {
+    padding: 0 2em;
+    margin: 0;
+    list-style-type: none;
 }
 
 nav a:hover {
     text-shadow: 0 2px 2px #fff;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 nav a:active {
     color: rgb(159, 159, 159);
 }
 
-nav .active {
+nav ul.menuLinks a.active {
     color: #e6cf00;
 }
 
@@ -60,7 +75,10 @@ nav .active {
 }
 
 #menu::before {
-	content: "☰";
+	content: "☰"; /* "\2630" */
+}
+#menu.open::before {
+    content: "✕";
 }
 
 h2 {
