@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Sunrise Bakery",
+            "address": "123 Main Street, Lomas de Zamora",
+            "phone": "1173667500",
+            "website": "www.sunrisebakery.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "Gold",
+            "email": "info@sunrisebakery.com",
+            "membersince": "2005"
+        },
+        {
+            "name": "GreenTech Solutions",
+            "address": "500 Hipolito Yrigoyen, Lomas de Zamora",
+            "phone": "1173695500",
+            "website": "www.greentechsolutions.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "NP",
+            "email": "info@greentechsolutions.com",
+            "membersince": "2010"
+        },
+        {
+            "name": "Harbor View Realty",
+            "address": "455 Balcarce, Remedios de Escalada",
+            "phone": "1133667500",
+            "website": "www.harborviewrealty.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "Silver",
+            "email": "info@harborviewrealty.com",
+            "membersince": "2012"
+        },
+        {
+            "name": "Tech Innovators",
+            "address": "789 Colombres, Lomas de Zamora",
+            "phone": "1173667590",
+            "website": "www.techinnovators.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "Gold",
+            "email": "info@techinnovators.com",
+            "membersince": "2018"
+        },
+        {
+            "name": "Café Delights",
+            "address": "1143 Hipolito Yrigoyen, Lomas de Zamora",
+            "phone": "1173867500",
+            "website": "www.cafedelights.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "Bronze",
+            "email": "info@cafedelights.com",
+            "membersince": "2020"
+        },
+        {
+            "name": "Artisan Crafts Co.",
+            "address": "234 Olazabal, Lomas de Zamora",
+            "phone": "1173567500",
+            "website": "www.artisancraftsco.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "Gold",
+            "email": "info@artisancraftsco.com",
+            "membersince": "2015"
+        },
+        {
+            "name": "Health & Wellness Center",
+            "address": "983 Laprida, Lomas de Zamora",
+            "phone": "1174667510",
+            "website": "www.healthwellnesscenter.com",
+            "img": "https://placehold.co/200",
+            "memberlevel": "Silver",
+            "email": "info@healthwellnesscenter.com",
+            "membersince": "2022"
+        }
+    ]
+}
