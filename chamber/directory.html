@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | LDZ Chamber</title>
+    <meta name="description" content="A directory page for the Chamber of commerce in Lomas de Zamora">
+    <meta name="author" content="Santiago Ariel Chaparo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <meta property="og:title" content="Directory | LDZ Chamber" >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="https://santichapa.github.io/wdd231/images/meta-img.webp" >
+    <meta property="og:url" content="https://santichapa.github.io/wdd231/directory.html" >
+    <meta name="twitter:card" content="summary" >
+</head>
+<body>
+    <header>
+        <img src="https://placehold.co/64" alt="The Lomas de Zamora Chamber of commerce Logo" width="64" height="auto">
+        <h1>Lomas de Zamora</h1>
+        <p>Chamber of Commerce</p>
+        <button id="menu"></button>
+    </header>
+    <nav id="navigation">
+        <ul class="menuLinks">
+            <li><a href="/chamber/index.html">Home</a></li>
+            <li><a href="/chamber/discover.html">Discover</a></li>
+            <li><a href="#" class="active">Directory</a></li>
+            <li><a href="/chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="maindirectory">
+        <h2>Chamber Members</h2>
+            <div>
+                <p>Layout:
+                    <button id="grid">🔲Grid</button>
+                    <button id="list">📃List</button>
+                </p>
+            </div>
+        <article id="cards">
+            
+        </article>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lomas de Zamora Chamber of Commerce  Molina Arrotea 1501, Lomas de Zamora | ✉️info@ldzchamber.org 📞11 2344 555 📍Location Map</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
