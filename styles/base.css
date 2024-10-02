@@ -89,6 +89,8 @@ h2 {
 
 }
 
+/* ========== CARDS STYLING ========== */
+
 .card {
     background-color: var(--background-light-color);
     margin: 1em auto 0;
@@ -103,6 +105,31 @@ h2 {
     margin: auto;
     padding: 0;
 }
+
+.card#info ul {
+    list-style-type: none;
+    padding: 1em;
+    text-align: center;
+}
+
+#weather-icon {
+    display: flex;
+}
+
+#weather-icon, #display-forecast img, #display-3d-forecast img{
+    width: 3rem;
+    margin-bottom: -.6em;
+}
+
+#display-forecast figure, #display-3d-forecast figure{
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+
+/* ========== FOOTER STYLING ========== */
 
 footer {
     background-color: var(--background-light-color);

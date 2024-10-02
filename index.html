@@ -17,6 +17,7 @@
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/courses.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <meta property="og:title" content="WDD 231 - Web Frontend Development I" >
     <meta property="og:type" content="website" >
     <meta property="og:image" content="https://santichapa.github.io/wdd231/images/meta-img.webp" >
@@ -48,6 +49,16 @@
         <section class="card">
             <h2>Buenos Aires, Argentina</h2>
             <img src="images/hero-small.webp" alt="A picture of Buenos Aires Argentina Temple">
+        </section>
+        <section class="card" id="info">
+            <h2>Information</h2>
+            <ul id="display-forecast">
+                <li>Lomas de Zamora, Buenos Aires today:</li>
+                <li><img id="weather-icon" width="20"><span id="current-temp"></span>&deg C, <span id="weather-desc"></span>, Windspeed: <span id="windspeed"></span> km/h</li>
+                <li>Windchill Index: <span id="windchill"></span> °C</li>
+            </ul>
+            <h3>3-day Forecast</h3>
+            <ul id="display-3d-forecast"></ul>
         </section>
         <section class="card">
             <h2>Web and Computer Programming Certificate</h2>
