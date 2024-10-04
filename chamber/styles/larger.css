@@ -16,4 +16,19 @@
     nav {
         grid-template-rows: 1fr;
     }
+
+    /* .homemain {
+        display: grid;
+        max-width: 100%;
+        margin: 0;
+    } */
+
+    .hero-img {
+        width: auto;
+        
+    }
+
+    .hero-img a {
+        font-size: 2rem;
+    }
 }

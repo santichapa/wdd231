@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | LDZ Chamber</title>
-    <meta name="description" content="A directory page for the Chamber of commerce in Lomas de Zamora">
+    <title>Home | LDZ Chamber</title>
+    <meta name="description" content="A landing page for the Chamber of commerce in Lomas de Zamora">
     <meta name="author" content="Santiago Ariel Chaparo">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -16,8 +16,9 @@
     <link rel="icon" href="favicon.ico">
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-    <meta property="og:title" content="Directory | LDZ Chamber" >
+    <meta property="og:title" content="Home | LDZ Chamber" >
     <meta property="og:type" content="website" >
     <meta property="og:image" content="https://santichapa.github.io/wdd231/images/meta-img.webp" >
     <meta property="og:url" content="https://santichapa.github.io/wdd231/directory.html" >
@@ -32,23 +33,46 @@
     </header>
     <nav id="navigation">
         <ul class="menuLinks">
-            <li><a href="/chamber/index.html">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="/chamber/discover.html">Discover</a></li>
-            <li><a href="#" class="active">Directory</a></li>
+            <li><a href="/chamber/directory.html">Directory</a></li>
             <li><a href="/chamber/join.html">Join</a></li>
         </ul>
     </nav>
-    <main class="maindirectory">
-        <h2>Chamber Members</h2>
-            <div>
-                <p>Layout:
-                    <button id="grid">🔲Grid</button>
-                    <button id="list">📃List</button>
-                </p>
-            </div>
-        <article id="cards">
-            
-        </article>
+    <main class="homemain">
+        <!-- <div class="hero-image">
+            <img src="images/hero-large.webp" alt="City of Lomas de Zamora" width="1000" height="auto">
+            <a href="join.html">Join Us!</a>
+        </div> -->
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp" alt="a hero image">
+            </picture>
+            <a href="join.html">Join Us!</a>
+        </div>
+        <section class="card" id="events">
+            <h2>Current Events</h2>
+            <ul>
+                <li> <strong>The Chamber of Commerce meet and greet </strong> | Wednesdays & Saturdays 7:00 PM</li>
+                <li> <strong>Business Pitch Competitions at Lomas de Zamora Municipal Park</strong> | Thursdays 5:00 PM </li>
+                <li>... and other upcoming events!</li>
+            </ul>
+        </section>
+        <section class="card" id="info">
+            <h2>Information</h2>
+            <ul id="display-forecast">
+                <li>Lomas de Zamora, Buenos Aires today:</li>
+                <li><img id="weather-icon" width="20"><span id="current-temp"></span>&deg C, <span id="weather-desc"></span>, Windspeed: <span id="windspeed"></span> km/h</li>
+                <li>Windchill Index: <span id="windchill"></span> °C</li>
+            </ul>
+            <h3>3-day Forecast</h3>
+            <ul id="display-3d-forecast"></ul>
+        </section>
+        <section class="card" id="contributors">
+            <h2>Premium Contributors</h2>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Lomas de Zamora Chamber of Commerce  Molina Arrotea 1501, Lomas de Zamora | ✉️info@ldzchamber.org 📞11 2344 555 📍Location Map</p>

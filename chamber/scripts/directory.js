@@ -50,33 +50,33 @@ gridButton?.addEventListener("click", () => {
 
 //========== DISPLAY GOLD MEMBERS ==========
 
-// function displayGoldMembers(members) {
-//     const goldMembers = shuffle(members)
+function displayGoldMembers(members) {
+    const goldMembers = shuffle(members)
 
-//     goldMembers.forEach(m => {
-//         if (m.memberlevel === "Gold") {
-//             const card = document.createElement("section");
-//             const name = document.createElement("h4");
-//             const image = document.createElement("img");
-//             const info = document.createElement("div");
+    goldMembers.forEach(m => {
+        if (m.memberlevel === "Gold") {
+            const card = document.createElement("section");
+            const name = document.createElement("h4");
+            const image = document.createElement("img");
+            const info = document.createElement("div");
             
             
-//             info.textContent = `📞${m.phone} ✉️${m.email} | 📍${m.address}`
-//             name.textContent = m.name
+            info.textContent = `📞${m.phone} ✉️${m.email} | 📍${m.address}`
+            name.textContent = m.name
 
-//             image.setAttribute("src", m.img);
-//             image.setAttribute("alt", `The brand icon of ${m.name}`);
-//             image.setAttribute("loading", "lazy");
-//             image.setAttribute("width", "100");
-//             image.setAttribute("height", "auto");
+            image.setAttribute("src", m.img);
+            image.setAttribute("alt", `The brand icon of ${m.name}`);
+            image.setAttribute("loading", "lazy");
+            image.setAttribute("width", "100");
+            image.setAttribute("height", "auto");
 
-//             card.appendChild(name);
-//             card.appendChild(image);
-//             card.appendChild(info);
-//             contributorsCard?.appendChild(card);
-//         } 
-//     });
-// }
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(info);
+            contributorsCard?.appendChild(card);
+        } 
+    });
+}
 
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;

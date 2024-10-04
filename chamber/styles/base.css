@@ -12,6 +12,17 @@
     --paragraph-font: "Roboto", sans-serif;
 }
 
+body {
+    max-width: 1500px;
+    margin: auto;
+    background-color: #555;
+}
+
+main {
+    background-color: #fff;
+    padding-bottom: 2em;
+}
+
 /* ========== HEADER STYLING ========== */
 
 header {
@@ -46,7 +57,89 @@ header p {
     color: hsl(0, 1%, 86%);
 }
 
+/* ========== SECTION CARD STYLING ========== */
 
+.card {
+    background-color: var(--background-light-color);
+    margin: 1em auto 0;
+    padding: 0;
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+.card h2 {
+    padding: .5em;
+    background-color: var(--secondary-color);
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 0;
+}
+
+.card#info ul, .card#events ul  {
+    list-style-type: none;
+    padding: 1em;
+    text-align: center;
+}
+
+#weather-icon {
+    display: flex;
+}
+
+ul#display-3d-forecast {
+    padding: 0;
+    margin: 0;
+}
+
+#weather-icon, #display-forecast img, #display-3d-forecast img{
+    width: 3rem;
+    margin-bottom: -.6em;
+}
+
+#display-forecast figure, #display-3d-forecast figure{
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.card#info h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/* ========== HERO IMGAGE STYLING ========== */
+
+.hero-image {
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+} 
+
+.hero-image a {
+    font-family: var(--paragraph-font);
+    color: var(--font-bright);
+    background-color: rgb(0, 0, 0, 60%);
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-radius: 1em;
+    border: 3px solid var();
+    padding: .8em;
+    margin: 1em;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px #e6cf00;
+    position: relative;
+    bottom: 150px;
+}
 
 /* ========== FOOTER STYLING ========== */
 
@@ -55,6 +148,7 @@ footer {
     padding: 1em;
     font-family: var(--paragraph-font);
     text-align: center;
+    border-top: 5px solid var(--primary-color);
 }
 
 
