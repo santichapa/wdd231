@@ -104,6 +104,7 @@ h2 {
     max-width: 400px;
     margin: auto;
     padding: 0;
+    animation: fade 1s;
 }
 
 .card#info ul {
@@ -180,3 +181,37 @@ button {
     font-weight: 500;
 }
 
+/* ========== MODALS STYLING ========== */
+
+dialog {
+    border-radius: .25rem;
+    padding: 1em;
+    background-color: var(--background-light-color);
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    font-family: var(--paragraph-font);
+}
+
+::backdrop {
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0, 0, 0, 10%);
+}
+
+/* ========== ANIMATIONS STYLING ========== */
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -94,6 +94,10 @@ function displayCourses(courses) {
         }
         li.innerText = `${c.subject} ${c.number}`
 
+        li.addEventListener("click", () => {
+            displayCourseDetails(c);
+        })
+
         courseList.appendChild(li);
         // creditSum = creditSum + c.credits
     });
@@ -118,5 +122,23 @@ document.querySelector("#wddCoursesBtn").addEventListener("click", () =>{
 })
 
 displayCourses(courses);
+
+const courseDetails = document.querySelector("#course-details")
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" class="close-btn">✕</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits: </strong>${course.credits}</p>
+        <p><strong>Certificate: </strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies: </strong>${course.technology.join(", ")}</p>`;
+
+    courseDetails.showModal();
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    })
+}
 
 
