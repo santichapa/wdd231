@@ -8,6 +8,9 @@
     --font-bright: #fff;
     --font-dark: #000;
 
+    --form-bg-color: #eee;
+    --form-placeholder-color: #ddd;
+
     --title-font: "Montserrat", sans-serif;
     --paragraph-font: "Roboto", sans-serif;
 }
@@ -314,3 +317,198 @@ nav ul.menuLinks a.active {
 #cards.list section:nth-child(even) {
     background-color: var(--accent1-color);
 }
+
+/* ========== JOIN PAGE  ========== */
+
+.memberships {
+    background-color: var(--background-light-color);
+    margin: auto ;
+    font-family: var(--title-font);
+    text-align: center;
+    padding: 1.5em;
+    border-radius: .5em;
+}
+
+.memberships section {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5rem;
+}
+
+.slide1 {
+    animation: slideInRight 1s ease-out, fadeIn 1s ease-in;
+    /* animation: fadeIn 1s ease-in; */
+}
+
+.slide2 {
+    animation: slideInRight 1.5s ease-out, fadeIn 1s ease-in;
+}
+
+.slide3 {
+    animation: slideInRight 2s ease-out, fadeIn 1s ease-in;
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(300%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+.record {
+    min-width: 200px;
+    background-color: var(--background-light-color);
+    font-family: var(--paragraph-font);
+    margin: auto;
+    padding: 1em;
+}
+
+.record h2 {
+    background-color: var(--secondary-color);
+    font-family: var(--title-font);
+    padding: 1em;
+    margin: 0;
+}
+
+#results {
+    padding: 1em;
+}
+
+.record a {
+    text-decoration: none;
+    color: var(--font-dark);
+    font-weight: 700;
+}
+
+
+/* ========== FORM STYLING ========== */
+
+.wf {
+    padding: .5em;
+    font-family: var(--title-font);
+    margin: auto;
+}
+
+.wf fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--form-placeholder-color);
+    background-color: var(--form-bg-color);
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf legend {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+}
+
+.wf label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--font-dark);
+    font-size: .9rem;
+}
+
+.wf div {
+    padding-top: 1rem;
+    color: var(--form-title-color);
+    font-size: .9rem;
+}
+
+.wf input[type="text"],
+.wf input[type="tel"],
+.wf input[type="email"],
+.wf input[type="password"],
+.wf textarea
+{
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--form-font1-color);
+    width: 80%;
+    max-width: 400px;
+    appearance: none;
+    background-color: var(--accent1-color);
+}
+
+.wf input[type="radio"],
+.wf input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#70877f, #596c65);
+    color: var(--font-dark);
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+.wf input[type="submit"]:hover {
+    text-shadow: 1px 1px 3px #ddd;
+}
+
+.wf input[type="submit"]:active {
+    background-image: linear-gradient(#596c65, #70877f);
+    box-shadow: none;
+}
+
+.wf input:required {
+    border-left: solid 8px red;
+}
+
+.wf input:required:valid {
+    border-left: solid 8px green;
+}
+
+.record {
+    margin-bottom: 100%;
+}
+
+/* ========== DIALOG STYLING ========== */
+
+dialog {
+    border-radius: .25rem;
+    padding: 1em;
+    background-color: var(--background-light-color);
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    font-family: var(--paragraph-font);
+}
+
+dialog h2 {
+    background-color: var(--secondary-color);
+    font-family: var(--title-font);
+    padding: 1em;
+}
+
+dialog li {
+    padding: .8em;
+}
+
+::backdrop {
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0, 0, 0, 10%);
+}
+
+
+

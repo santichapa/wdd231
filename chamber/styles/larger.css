@@ -1,9 +1,5 @@
 @media screen and (min-width: 650px) {
-    /* main {
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-    } */
+    /* ========== NAVIGATION/MENU ========== */
 
     #menu {
         display: none;
@@ -15,7 +11,10 @@
 
     nav {
         grid-template-rows: 1fr;
+        font-size: 1.1rem;
     }
+
+    /* ========== HOME PAGE ========== */
 
     /* .homemain {
         display: grid;
@@ -30,5 +29,29 @@
 
     .hero-img a {
         font-size: 2rem;
+    }
+
+    /* ========== JOIN PAGE ========== */
+
+    .joinmain {
+        display: flex;
+    }
+
+    .wf legend {
+        font-size: 1.4rem;
+    }
+
+    .wf fieldset, 
+    .wf label, 
+    .wf input {
+        font-size: 1.1rem;
+    }
+
+    .wf input[type="submit"] {
+        margin: -2rem 2% 2rem 2%;
+    }
+
+    .memberships {
+        margin-top: 3.25em;
     }
 }
