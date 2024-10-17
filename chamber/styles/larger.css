@@ -72,4 +72,24 @@
     .memberships {
         margin-top: 3.25em;
     }
+
+    /* ========== DISCOVER PAGE ========== */
+    .discovermain {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1em;
+    }
+
+    .discover-images {
+        width: 400px;
+    }
+
+    .discover-images img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .calendar iframe{
+        max-width: 500px;
+    }
 }

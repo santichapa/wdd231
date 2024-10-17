@@ -511,5 +511,31 @@ dialog button {
     border: 1px solid rgb(0, 0, 0, 10%);
 }
 
+/* ========== DISCOVER PAGE ========== */
 
+.content .card p {
+    padding: .5em;
+}
 
+.discovermain {
+    margin: 0;
+}
+
+.calendar iframe{
+    width: 99.6%;
+    max-height: 319px;
+    margin-bottom: .3em;
+}
+
+.discover-images {
+    padding: 0 .5em;
+}
+
+.discover-images img {
+    width:100%;
+    height: auto;
+}
+
+h2 {
+    margin: 0;
+}
