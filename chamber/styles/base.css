@@ -527,10 +527,6 @@ dialog button {
     margin-bottom: .3em;
 }
 
-.discover-images {
-    padding: 0 .5em;
-}
-
 .discover-images img {
     width:100%;
     height: auto;
