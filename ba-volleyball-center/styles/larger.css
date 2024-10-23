@@ -1,0 +1,30 @@
+@media screen and (min-width: 650px) {
+    /* main {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    } */
+
+    body {
+        max-width: 1200px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    .wf fieldset {
+        width: 100%;
+    }
+    
+    .card {display: block;}
+}
