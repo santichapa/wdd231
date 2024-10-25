@@ -54,8 +54,8 @@ const tournaments = [
     {
       name: "Lomas Stadium",
       openhours: "Mon - Fri 19:00 - 23:30 PM",
-      adress: "Frias 279, temperley",
-      phone: "1173667500",
+      adress: "Molina Arrotea 5003, Lomas de Zamora",
+      phone: "1173667501",
       averagerating: 4.7,
       ages: "all ages",
       imgurl: "images/courts/stadium2.webp"
@@ -64,7 +64,7 @@ const tournaments = [
       name: "Lomas Park",
       openhours: "Mon - Fri 19:00 - 23:30 PM",
       adress: "Frias 279, temperley",
-      phone: "1173667500",
+      phone: "1173667502",
       averagerating: 4.5,
       ages: "all ages",
       imgurl: "images/courts/unroofed1.webp"
@@ -73,7 +73,7 @@ const tournaments = [
       name: "Los Andes Gymnasium",
       openhours: "Mon - Fri 19:00 - 23:30 PM",
       adress: "Frias 279, temperley",
-      phone: "1173667500",
+      phone: "1173667503",
       averagerating: 4.1,
       ages: "all ages",
       imgurl: "images/courts/stadium3.webp"
@@ -82,7 +82,7 @@ const tournaments = [
       name: "Banfield 2",
       openhours: "Mon - Fri 19:00 - 23:30 PM",
       adress: "Frias 279, temperley",
-      phone: "1173667500",
+      phone: "1173667504",
       averagerating: 3.9,
       ages: "all ages",
       imgurl: "images/courts/unroofed2.webp"
@@ -91,7 +91,7 @@ const tournaments = [
         name: "Colon Walk Court",
         openhours: "Mon - Fri 19:00 - 23:30 PM",
         adress: "Frias 279, temperley",
-        phone: "1173667500",
+        phone: "1173667505",
         averagerating: 3.9,
         ages: "all ages",
         imgurl: "images/courts/unroofed2.webp"

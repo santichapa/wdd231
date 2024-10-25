@@ -24,6 +24,12 @@ h2, h3 {
     text-align: center;
 }
 
+#visitsDisplay {
+    color: var(--bright-font);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
 /* ========== HEADER ========== */
 
 header {
